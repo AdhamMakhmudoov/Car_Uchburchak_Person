@@ -3,27 +3,24 @@ public class Main {
     public static void main(String... args){
 
         Car car = new Car();
-        car.color= "yashil";
-        car.model = "Nexia";
-        car.autoMech = "Avtomat";
-        car.price = 15898;
+        car.setColor("Qora");
+        car.setModel("Gentra");
+        car.setPrice(1869);
+        car.setAutoMech("Mexanik");
+        car.getInfo();
 
-        System.out.println(car);
         System.out.println("------------------------------");
 
         Uchburchak uchburchak = new Uchburchak();
-        uchburchak.a=12;
-        uchburchak.b=8;
-        uchburchak.c=25;
-        uchburchak.getInfo();
+        uchburchak.setA(7);
+        uchburchak.setB(8);
+        uchburchak.setC(9);
+        uchburchak.getYuzi(uchburchak.getA(), uchburchak.getB());
+        uchburchak.getPerimetr(uchburchak.getA(), uchburchak.getB(), uchburchak.getC());
 
         System.out.println("------------------------------");
 
-        Person person = new Person();
-        person.firstname = "Adham";
-        person.lastname = "Makhmudov";
-        person.age = 27;
+        Point point = new Point(5,6,7);
 
-        System.out.println(person);
     }
 }
